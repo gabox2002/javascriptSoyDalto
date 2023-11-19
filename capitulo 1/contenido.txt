@@ -1,0 +1,170 @@
+0. Introducción - Que es Javascript?
+    - Lenguaje de programación
+    - Interpretado
+    - Orientado a objetos
+    - Imperativo
+    - Case sensitive (Upper and lower Case)
+    - Basado en prototios / instancias / classless
+    - Tipado débil
+    - Lenguaje dinámico
+
+    - ECMASCRIPT (5.1 y 6, 7, 8, Next)
+
+1. Editor de texto
+    - Sublime text 3
+    - VisualStudio
+
+2. Para que se usa?
+    - Dinamismo de los sitios web
+    - Servidor en NodeJS
+    - Tecnoligías Frontend como Angular, React o Vue.js 
+
+    Otros usos no tan comunes:
+
+    - Inteligencia Artificial
+    - Placas electrónicas (Jhonny Five) "Arduinos
+    - Mobile Apps
+    - Desktop Apps
+    - Etc...
+
+3. Formas de enlazar Javascript
+    - En linea
+    - Como contenido en la etiqueta <script>
+    - Como contenido en n archivo de formato .Javascript
+    - Con un Require (con Modulos)
+
+4. Variables
+    - Concepto: Es un espacio en memoria
+    - Ejemplo
+    - Tipos de Datos:   String (Cadena de texto)
+                        Number
+                        Boolean
+    - Casos especiales de Datos:    Undefined(existe pero no tiene valor inicializado)
+                                    Null (tiene un valor vacio o nula)
+                                    Nan (Not a Number, no es un número)
+    - Tipos de datos Primitivos: String, Number, Boolean, Undefined, Null, Nan porque ya vienen con el lenguaje, ya forman con Javascript
+    - Scope (Alcance) Let tiene menos alcance, Var tiene alcance global
+    - Hoisting (permite usar funciones y variables antes de que se hayan declarado)
+    - Tipos de Variables: Let, Var y Const
+    - Crear multiples variables (separandolas con coma)
+                        -> Let nombre1 = "jorge", nombre2 = "pedro";
+
+    - Pruebas con prompt
+        Let nombre = prompt("decime tu nombre") almacena el nombre en variable nombre
+
+    - Document.write (variable) -> Funciona como un alert, Escribe una cadena de texto en el documento, seguida de una nueva línea.
+5. Operadores en Javascript
+    - Operadores de Asignación
+            Un operador de asignación asigna un valor al operando de la izquierda basado en el valor del operando de la derecha
+                Nombre                          Abreviatura     Significado      
+                Asignacion                          x = y           x = y
+                Asignación de adicción              x += y          x = x + y
+                Asignación de sustracción           x -= y          x = x - y
+                Asignación de multiplicación        x *= y          x = x * y
+                Asignación de división              x /= y          x = x / y
+                Asignación de resto                 x %= y          x = x % y
+
+                Ej. let numero = 10
+                    numero += 5
+
+                    equivale a: 10 + 5 = 15
+                    document.write(numero)  ----> 15
+
+    - Operadores Aritméticos 
+            Toman valores númericos(ya sean literales o variables) como sus operandos y retornan un valor numérico único
+                Nombre              
+                Suma (+)
+                Resta (-)
+                Multiplicacion(*)
+                División(/)
+                Módulo(%)
+                Incremento(++)
+                Decremento(--)
+
+                Ej. numero1 = 10;
+                    numero2 = 5;
+
+                    resultado = numero1 / numero2:
+                    alert(resultado)  ----> 2
+
+6. Concatención
+    - Definición y Ejemplo
+    - Con el signo +
+        saludo = "Hola Pedro":
+        pregunta = " ¿Como estas?";
+
+        frase = saludo + pregunta
+        document.write(frase) ----> Hola Pedro ¿Como estas?
+
+    - Para numeros forzamos string ("" + 9 + 4 )
+    - Con Concat (es un metodo de cadena para concatenar si tiene un string y un numero)
+        Ej. numero1 = "10";
+            numero2 = 5;
+
+            frase = numero1.concat(nunmero2);
+            document.write(frase);   ---> 105
+
+    - Con backtiks(alt+96)` y la variable entre ${}
+
+        Ej. frase1 = "lucas";
+            frase2 = `soy ${nombre} y estoy caminando`;
+
+            document.write(frase); ---> soy lucas y estoy caminando
+
+7. Backtiks (Bloquote o Acento Grave) y Escape
+    - Sin backtiks: "linea 1\n\
+                            linea 2"
+    - Con backtiks: ´´´´ linea 1
+                            linean 2`
+    - Definición
+    - Escape de comillas simples
+    - Escape de comillas dobles
+
+8. Operadores (Intermedio)
+    - Operadores Lógicos
+        Los operadores lógicos nos devuelven un resultado a partir de que se cumpla (o no) una condición, su resultado es booleano, y sus operandos son valores lógicos o asimilables a ellos.
+
+            AND (&&): devuelve true solo si ambas expresiones son true.
+                true && true --> true
+                true && false --> false
+                false && true --> false
+                false && false --> false
+
+            OR (||): devuelve true si al menos una de las expresiones es true.
+                true && true --> true
+                true && false --> true
+                false && true --> true
+                false && false --> false
+
+            NOT (!): invierte el valor de la expresión.
+                true --> false
+                false --> true
+
+    - Operadores de comparación
+        Los operadores de comparación comparan dos expresiones y devuelven un valor Boolean que representa la relación de sus valores
+            Igual (==)
+            Igual estricto (===) son el mismo dato y el mismo valor(?)
+            No igual (!=)
+            No igual estricto(!=)
+            Mayor que (>)
+            Menor que (<)
+            Mayor o igual que (>=)
+            Menor o igul que (<=)
+
+9. Camel Case
+    - Definición
+    - Usos
+    - Ejemplo: parseInt, parseFloat, getElementById.
+
+10. Condicionales 
+    - Definición y usos
+    - If 
+        if (true) {
+            alert("hola")
+        } -----------------------> se ejecuta si es true, si es "if(false)" no se ejecuta
+    - Else If
+        si lo anteior no se cumple, el ELSE if se cumple otra Condicion
+
+    - Else
+        si no se cumple nada de la condiciones anteriores
+
